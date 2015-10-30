@@ -178,7 +178,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background: #494949;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -263,6 +263,8 @@ header .header-content .header-content-inner p {
     position: relative;
     margin: 0 auto;
     max-width: 650px;
+    max-height:650px;
+    text-align:center;
 }
 
 .portfolio-box .portfolio-box-caption {
@@ -473,4 +475,29 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+}
+
+.white {
+    color: #fff;
+}
+.fa-2x {
+    font-size: 200%;
+}
+.fa-3x {
+    font-size: 300%;
+}
+.fa-4x {
+    font-size: 400%;
+}
+.fa-5x {
+    font-size: 500%;
+}
+.fa-6x {
+    font-size: 600%;
+}
+.fa-7x {
+    font-size: 700%;
+}
+.fa-8x {
+    font-size: 800%;
 }
