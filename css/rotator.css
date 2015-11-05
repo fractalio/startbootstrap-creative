@@ -17,7 +17,6 @@ body {
 }
 
 .demo1 {
-    //text-align: left;
     font-weight: 300;
 }
 .demo2 {
@@ -29,5 +28,4 @@ body {
     width: 150px;
     font-weight: 600;
     color: #fff;
-    background: #2a6496;         
 }
