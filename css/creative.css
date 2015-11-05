@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    font-family: 'Raleway','Helvetica Neue',Arial,sans-serif;
+    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
 hr {
@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Raleway','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 p {
@@ -65,7 +65,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 aside {
@@ -78,7 +78,7 @@ aside {
 
 .navbar-default {
     border-color: rgba(34,34,34,.05);
-    font-family: 'Raleway','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -87,7 +87,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand {
     text-transform: uppercase;
-    font-family: 'Raleway','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
     color: #f05f40;
 }
@@ -218,7 +218,7 @@ header .header-content .header-content-inner p {
 
     header .header-content {
         position: absolute;
-        top: 50%;
+        top: 35%;
         padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
@@ -262,8 +262,8 @@ header .header-content .header-content-inner p {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 650px;
-    height:550px;
+    max-width: 750px;
+    height:500px;
     text-align:center;
 }
 
@@ -293,7 +293,7 @@ header .header-content .header-content-inner p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Raleway','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -443,7 +443,7 @@ fieldset[disabled] .btn-primary.active {
     border: 0;
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: 'Raleway','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -477,8 +477,12 @@ body {
     webkit-tap-highlight-color: #222;
 }
 
+/* Custom css written */
 .white {
     color: #fff;
+}
+.black {
+    color: #000;
 }
 .fa-2x {
     font-size: 200%;
@@ -502,22 +506,134 @@ body {
     font-size: 800%;
 }
 
+.text-muted {
+    text-align:left;
+}
 .unicell-center {
- position: absolute;
-    margin-top: 30%;
-    margin-left: -10%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  /* 
+  Yep!
+  */
+  transform: translate(-50%, -50%);
 }
 .gridcell-center {
-    position: absolute;
-    margin-top: 30%;
-    margin-left: -25%;
+    position: relative;
+    top: 35%;
 }
 
-@media screen and (min-width: 480px) { 
-    .gridcell-center {
-        position: absolute;
-        margin-top: 30%;
-        margin-left:-35%;
-    }
+ /* FULL SCREEN MODAL STYLES (Customized css for modal)
+    -------------------------------------------------- */
+.fullscreen .modal-dialog {
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    padding: 0;
+    color: #333;
+    font-family:'Raleway',sans-serif;
+    font-size:150%;
+}
+
+.fullscreen .modal-content {
+    height: 100%;
+    min-height: 100%;
+    border-radius: 0;
+    color: #000;
+    background: rgba(255, 255, 255, 0.97);
+    overflow:auto;
+    text-align:justify;
+}
+
+.fullscreen .modal-body ul {
+    padding: 100px 0 0 0;
+}
+
+.fullscreen .modal-body li {
+    padding: 10px 0 10px 0 ;
+}
+
+.fullscreen .modal-body a {
+    color: #333;
+    font-size: 300%;
+}
+
+.modal-header{
+    min-height:16.43px;
+    padding:30px;
+    border-bottom:1px solid #e5e5e5
     
+}
+.modal-header .close{
+    margin-top:-40px
+    
+}
+@media (max-width: 480px){
+    .fullscreen .modal-body ul {
+        padding: 30px 0 0 0;
+        overflow: auto;
+    }
+
+    .fullscreen .modal-body li {
+        padding: 4px 0 4px 0 ;
+    }
+
+    .fullscreen .modal-body a {
+        color: #333;
+        font-size: 200%;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+/*.header-content:before {
+  content: "\f233"; 
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  position: absolute;
+  font-size: 30px;
+  color: lightblue;
+  top: 30%;
+  left: 90%;
+  margin: -300px 0 0 -200px;
+  z-index: 1;
+}
+*/
+@media(min-width:768px) {
+.header-content:before {
+        content: url(http://echostreams.com/userfiles/images/product/DuraStreams/DSS212/DSS212FrontAngle.png);
+        position:absolute;
+        top: 70%;
+        left: 50%;
+        margin: -50px 0 0 -210px;
+    }
+    .header-content:after {
+        content: url(http://echostreams.com/userfiles/images/product/DuraStreams/DSS212/DSS212FrontAngle.png);
+        position:absolute;
+        top: 110%;
+        left: 50%;
+        margin: -50px 0 0 -210px;
+    }
+}
+
+/*Image STacking*/
+#diamond {
+position:absolute;
+z-index:auto;
+}
+#spade {
+position:absolute;
+z-index:1;
+left:16px;
+top:260px;
+}
+#club {
+position:absolute;
+z-index:2;
+left:26px;
+top:390px;
 }
