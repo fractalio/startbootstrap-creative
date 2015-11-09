@@ -609,16 +609,16 @@ body {
 */
 @media(min-width:768px) {
 .header-content:before {
-        content: url(../img/lined.jpg);
+        content: url(http://echostreams.com/userfiles/images/product/DuraStreams/DSS212/DSS212FrontAngle.png);
         position:absolute;
-        top: 120%;
+        top: 70%;
         left: 50%;
         margin: -50px 0 0 -210px;
     }
     .header-content:after {
-        content: url(../img/lined.jpg);
+        content: url(http://echostreams.com/userfiles/images/product/DuraStreams/DSS212/DSS212FrontAngle.png);
         position:absolute;
-        top: 160%;
+        top: 100%;
         left: 50%;
         margin: -50px 0 0 -210px;
     }
@@ -659,6 +659,6 @@ bottom:-100px;
 left:750px;
 }
 
-
-
-
+.text-left {
+text-align:left;
+}
