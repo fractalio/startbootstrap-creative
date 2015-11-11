@@ -293,7 +293,7 @@ header .header-content .header-content-inner p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-   
+
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -514,7 +514,16 @@ body {
   left: 50%;
   top: 50%;
 
-  /* 
+  /*
+  Yep!
+  */
+  transform: translate(-50%, -50%);
+}
+.image-center {
+  position: absolute;
+  left: 50%;
+
+  /*
   Yep!
   */
   transform: translate(-50%, -50%);
@@ -524,8 +533,8 @@ body {
     position: absolute;
     top: 30%;
     left:100px;
-    
-    
+
+
 }
 
  /* FULL SCREEN MODAL STYLES (Customized css for modal)
@@ -546,11 +555,10 @@ body {
     min-height: 100%;
     border-radius: 0;
     color: #000;
-    background: rgba(255, 255, 255, 0.97);
+    background: #FFFFFF;
     overflow:auto;
     text-align:justify;
 }
-
 .fullscreen .modal-body ul {
     padding: 100px 0 0 0;
 }
@@ -568,11 +576,11 @@ body {
     min-height:16.43px;
     padding:30px;
     border-bottom:1px solid #e5e5e5
-    
+
 }
 .modal-header .close{
     margin-top:-40px
-    
+
 }
 @media (max-width: 480px){
     .fullscreen .modal-body ul {
@@ -593,7 +601,7 @@ body {
 }
 
 /*.header-content:before {
-  content: "\f233"; 
+  content: "\f233";
   font-family: FontAwesome;
   font-style: normal;
   font-weight: normal;
@@ -607,23 +615,24 @@ body {
   z-index: 1;
 }
 */
+/*
 @media(min-width:768px) {
 .header-content:before {
-        content: url(http://echostreams.com/userfiles/images/product/DuraStreams/DSS212/DSS212FrontAngle.png);
+        content: url(../img/DSS212FrontAngle.png);
         position:absolute;
-        top: 70%;
-        left: 50%;
+        top: 80%;
+        left: 49%;
         margin: -50px 0 0 -210px;
     }
     .header-content:after {
-        content: url(http://echostreams.com/userfiles/images/product/DuraStreams/DSS212/DSS212FrontAngle.png);
+        content: url(../img/DSS212FrontAngle.png);
         position:absolute;
         top: 100%;
-        left: 50%;
+        left: 49%;
         margin: -50px 0 0 -210px;
     }
 }
-
+*/
 /*Image STacking*/
 #diamond {
 position:absolute;
@@ -661,4 +670,35 @@ left:750px;
 
 .text-left {
 text-align:left;
+}
+
+#new-storage h2 {
+  margin-top: -3%;
+}
+#new-storage-features {
+  margin-top: -4%;
+}
+.margin-top-6 {
+  margin-top: 6%;
+}
+.margin-top-10 {
+  margin-top: 10%;
+}
+.margin-top-minus-10 {
+  margin-top: -10%;
+}
+.margin-top-minus-5 {
+  margin-top: -5%;
+}
+.margin-top-minus-6 {
+  margin-top: -6%;
+}
+.margin-top-minus-2 {
+  margin-top: -2%;
+}
+.margin-left-minus-5 {
+  margin-left: -5%;
+}
+.margin-left-minus-2 {
+  margin-left: -2%;
 }
